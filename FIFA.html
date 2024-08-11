@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Abalone Dataset Analysis - Dhavani Avu's Portfolio</title>
+    <title>FIFA Dataset Analysis - Dhavani Avu's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -13,60 +13,46 @@
         <!-- Main Content -->
         <section class="wrapper style1 fullscreen fade-up">
             <div class="inner">
-                <h2>Abalone Dataset Analysis</h2>
-                <p><strong>Project Title:</strong> Advanced Analysis of Abalone Dataset</p>
+                <h2>FIFA Dataset Analysis</h2>
+                <p><strong>Project Title:</strong> Comprehensive Analysis of FIFA 19 Player Data</p>
                 
                 <h3>Project Overview</h3>
-                <p>This comprehensive project involves an in-depth analysis of the Abalone dataset, which includes various physical measurements of marine snails (abalone). The primary objective is to leverage advanced statistical and machine learning techniques to predict attributes such as age and sex of the abalones, while also uncovering significant patterns and relationships within the data. The project integrates multiple methodologies to address key research questions and provide actionable insights.</p>
+                <p>This project involves a detailed analysis of the FIFA 19 dataset, encompassing player attributes, club performance, and game statistics. The primary aim is to derive insights into player performance metrics, transfer values, and potential factors influencing player ratings. The analysis integrates advanced data manipulation techniques, statistical testing, and machine learning models to explore key patterns and predictions.</p>
 
-                <h3>Research Objectives</h3>
+                <h3>Research Questions</h3>
                 <ul>
-                    <li>Assess the accuracy of predicting abalone age from physical measurements using regression models.</li>
-                    <li>Investigate the relationship between age and sex to determine if age can be a significant predictor of sex.</li>
-                    <li>Analyze the correlation between gender and other physical parameters of the abalone.</li>
-                    <li>Employ clustering techniques to categorize abalone into distinct groups based on their characteristics.</li>
+                    <li>What are the main attributes that influence player ratings in FIFA 19?</li>
+                    <li>How can we predict a player's transfer value based on their attributes?</li>
+                    <li>Are there significant differences in player attributes across different positions or leagues?</li>
+                    <li>What factors are most predictive of a player's overall rating?</li>
                 </ul>
 
-                <h3>Technologies and Tools</h3>
+                <h3>Tools and Technologies</h3>
                 <ul>
                     <li><strong>Programming Languages:</strong> Python, R</li>
                     <li><strong>Data Manipulation:</strong> pandas, numpy</li>
                     <li><strong>Data Visualization:</strong> matplotlib, seaborn, Tableau</li>
-                    <li><strong>Machine Learning Libraries:</strong> sklearn, clustMixType</li>
-                    <li><strong>Statistical Libraries:</strong> scipy, statsmodels</li>
+                    <li><strong>Machine Learning:</strong> sklearn, xgboost</li>
+                    <li><strong>Statistical Analysis:</strong> scipy, statsmodels</li>
                     <li><strong>Dimensionality Reduction:</strong> PCA</li>
                 </ul>
 
-                <h3>Methodologies and Techniques</h3>
-                <p>The project utilized a range of statistical and machine learning techniques to achieve its objectives:</p>
+                <h3>Methodology</h3>
+                <p>The project employs a variety of techniques to analyze the dataset:</p>
                 <ul>
-                    <li><strong>Linear Regression:</strong> Applied to predict abalone age based on various physical attributes. Evaluated using Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared metrics.</li>
-                    <li><strong>Polynomial Regression:</strong> Implemented to capture and model non-linear relationships between features and the target variable (age). Evaluated using RMSE, MAE, and R-squared metrics.</li>
-                    <li><strong>Principal Component Analysis (PCA):</strong> Used for dimensionality reduction to mitigate multicollinearity and simplify the dataset while preserving critical information.</li>
-                    <li><strong>Decision Tree and Random Forest:</strong> Employed for classifying the sex of abalones based on physical attributes, with an emphasis on variable importance analysis.</li>
-                    <li><strong>Chi-Square Test:</strong> Conducted to determine the significance of the relationship between age and sex.</li>
-                    <li><strong>K-Prototypes Clustering:</strong> Applied to identify and categorize distinct groups of abalones based on a combination of physical characteristics and sex.</li>
+                    <li><strong>Data Cleaning:</strong> Addressed missing values, outliers, and inconsistent data entries using pandas and custom preprocessing scripts.</li>
+                    <li><strong>Exploratory Data Analysis (EDA):</strong> Utilized seaborn and matplotlib for visual exploration of data distributions, correlations, and patterns.</li>
+                    <li><strong>Feature Engineering:</strong> Created new features based on player attributes and performance metrics to enhance model accuracy.</li>
+                    <li><strong>Principal Component Analysis (PCA):</strong> Applied PCA to reduce dimensionality and identify the principal components influencing player ratings.</li>
+                    <li><strong>Regression Models:</strong> Implemented linear and polynomial regression models to predict player transfer values and ratings.</li>
+                    <li><strong>Machine Learning Models:</strong> Used decision trees and XGBoost for classification tasks and feature importance evaluation.</li>
                 </ul>
 
                 <h3>Results and Insights</h3>
-                <p>The analysis provided valuable insights into the Abalone dataset, including:</p>
+                <p>The analysis provided the following key insights:</p>
                 <ul>
-                    <li>Effective prediction of abalone age using various regression models with varying levels of accuracy and precision.</li>
-                    <li>Significant correlations between age and sex, with implications for understanding the demographic distribution of abalones.</li>
-                    <li>Identification of distinct clusters within the abalone population, aiding in the classification of abalone types based on physical attributes and gender.</li>
+                    <li><strong>Key Influencers:</strong> Identified significant attributes affecting player ratings, such as player position, skill attributes, and age.</li>
+                    <li><strong>Predictive Modeling:</strong> Developed models with high predictive accuracy for player transfer values and ratings, demonstrating the impact of various attributes.</li>
+                    <li><strong>Position and League Analysis:</strong> Revealed notable differences in attributes across positions and leagues, influencing overall performance metrics.</li>
+                    <li><strong>Principal Components:</strong> PCA highlighted critical features that contribute most to player ratings, streamlining future analyses.</li>
                 </ul>
-                <p>These findings contribute to a deeper understanding of abalone biology and offer practical applications in marine biology and ecological studies.</p>
-
-                <a href="index.html" class="button">Back to Portfolio</a>
-            </div>
-        </section>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
