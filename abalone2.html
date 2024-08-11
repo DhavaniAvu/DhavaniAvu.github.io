@@ -14,56 +14,52 @@
         <section class="wrapper style1 fullscreen fade-up">
             <div class="inner">
                 <h2>Abalone Dataset Analysis</h2>
-                <p><strong>Project Title:</strong> Statistical Analysis and Machine Learning on Abalone Dataset</p>
+                <p><strong>Project Title:</strong> Analysis of Abalone Dataset</p>
                 <h3>About the Project</h3>
-                <p>This project involved the analysis of the Abalone dataset, a collection of measurements obtained from abalones, a type of marine snail. The dataset includes various physical measurements such as weights, heights, diameters, and lengths, along with categorical attributes like sex. The main objectives were to explore the data through visualization and statistical models, predict the age of abalones, and understand the relationships between different physical attributes.</p>
-                
+                <p>This project involves analyzing the Abalone dataset, which includes physical measurements of marine snails. The objective is to explore and predict various attributes such as age and sex using statistical and machine learning models. The analysis addresses key research questions through methods like regression analysis, decision trees, clustering, and principal component analysis (PCA).</p>
+
+                <h3>Research Questions</h3>
+                <ul>
+                    <li>How well can we predict the age of an abalone based on its physical measurements?</li>
+                    <li>Is there any significance between age and sex?</li>
+                    <li>Is there any significant relation between gender of the abalone and other physical parameters?</li>
+                    <li>Identify distinct groups of abalone based on similar characteristics.</li>
+                </ul>
+
                 <h3>Tools and Technologies Used</h3>
                 <ul>
-                    <li><strong>Programming Languages:</strong> R</li>
-                    <li><strong>Data Manipulation and Analysis:</strong> dplyr, tidyr</li>
-                    <li><strong>Data Visualization:</strong> ggplot2</li>
-                    <li><strong>Statistical Analysis:</strong> stats, car</li>
-                    <li><strong>Machine Learning:</strong> randomForest, rpart, caret</li>
-                    <li><strong>Dimensionality Reduction:</strong> prcomp (PCA)</li>
-                </ul>
-                
-                <h3>Exploratory Data Analysis (EDA) and Preprocessing</h3>
-                <p>During the EDA phase, we performed the following tasks:</p>
-                <ul>
-                    <li>Visualized distributions of numerical variables and identified potential outliers using scatter plots and correlation matrices.</li>
-                    <li>Explored relationships between variables, noting significant correlations such as between length and diameter.</li>
-                    <li>Addressed missing values and ensured consistent data types across the dataset.</li>
-                    <li>Removed outliers and normalized numerical data to improve model accuracy.</li>
+                    <li><strong>Programming Languages:</strong> Python, R</li>
+                    <li><strong>Data Manipulation and Analysis:</strong> pandas, numpy</li>
+                    <li><strong>Data Visualization:</strong> matplotlib, seaborn, Tableau</li>
+                    <li><strong>Machine Learning:</strong> sklearn, clustMixType</li>
+                    <li><strong>Statistical Analysis:</strong> scipy, statsmodels</li>
+                    <li><strong>Dimensionality Reduction:</strong> PCA</li>
                 </ul>
 
-                <h3>Statistical Analysis and Modeling Techniques</h3>
-                <p>We applied several statistical models and techniques to analyze the dataset:</p>
+                <h3>Analysis and Techniques</h3>
+                <p>The analysis employed various statistical and machine learning techniques:</p>
                 <ul>
-                    <li><strong>Linear and Polynomial Regression:</strong> Used to predict abalone age based on physical measurements. Interaction terms and polynomial degrees were used to improve model performance.</li>
-                    <li><strong>Principal Component Analysis (PCA):</strong> Reduced dimensionality to address multicollinearity among predictor variables, resulting in improved model accuracy.</li>
-                    <li><strong>Decision Trees and Random Forests:</strong> Implemented to classify abalone sex and predict age. Evaluated variable importance and model performance using Mean Squared Error (MSE).</li>
-                    <li><strong>Chi-Square Tests:</strong> Investigated relationships between categorical variables, revealing significant associations between age and sex.</li>
-                    <li><strong>K-Prototypes Clustering:</strong> Identified distinct groups of abalones based on combined numerical and categorical data.</li>
+                    <li><strong>Linear Regression:</strong> Used to predict age based on physical measurements.</li>
+                    <li><strong>Polynomial Regression:</strong> Applied to capture non-linear relationships.</li>
+                    <li><strong>Principal Component Analysis (PCA):</strong> Reduced dimensionality and addressed multicollinearity.</li>
+                    <li><strong>Decision Tree and Random Forest:</strong> Classify sex based on physical attributes and evaluate variable importance.</li>
+                    <li><strong>Chi-Square Test:</strong> Examined the relationship between age and sex.</li>
+                    <li><strong>K-Prototypes Clustering:</strong> Identified distinct groups of abalone based on physical characteristics and sex.</li>
                 </ul>
 
-                <h3>Key Findings</h3>
-                <ul>
-                    <li>Significant relationships were found between physical measurements and abalone age.</li>
-                    <li>PCA improved prediction accuracy by addressing multicollinearity.</li>
-                    <li>Decision trees and random forests effectively classified abalone sex based on physical characteristics.</li>
-                    <li>Statistical tests revealed significant associations between age and sex, though with varying degrees of significance depending on included variables.</li>
-                </ul>
+                <h3>Outcomes and Insights</h3>
+                <p>The analysis revealed significant relationships between age and sex, and demonstrated the ability to predict age from physical measurements. It also successfully classified abalone sex based on physical attributes and identified distinct groups using clustering techniques. These findings enhance understanding of abalone biology and have practical implications for marine biology and resource management.</p>
 
-                <h3>Conclusion</h3>
-                <p>The analysis of the Abalone dataset provided valuable insights into the relationships between physical attributes and age, sex, and groupings of abalones. The findings can aid researchers and professionals in marine biology and related fields by enhancing their understanding of abalone characteristics and improving resource management.</p>
-                
-                <h3>References</h3>
-                <ul>
-                    <li><a href="https://archive.ics.uci.edu/ml/datasets/abalone">Abalone dataset - UCI Machine Learning Repository</a></li>
-                </ul>
+                <a href="index.html" class="button">Back to Portfolio</a>
             </div>
         </section>
     </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
