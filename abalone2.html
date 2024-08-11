@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Abalone Age Prediction - Dhavani Avu's Portfolio</title>
+    <title>Abalone Dataset Analysis - Dhavani Avu's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -13,36 +13,57 @@
         <!-- Main Content -->
         <section class="wrapper style1 fullscreen fade-up">
             <div class="inner">
-                <h2>Abalone Age Prediction</h2>
-                <p><strong>Project Title:</strong> Predicting the Age of Abalones Using Machine Learning Techniques</p>
-                
+                <h2>Abalone Dataset Analysis</h2>
+                <p><strong>Project Title:</strong> Statistical Analysis and Machine Learning on Abalone Dataset</p>
                 <h3>About the Project</h3>
-                <p>This project focuses on predicting the age of abalones based on physical measurements. The dataset used contains several features, including length, diameter, height, whole weight, shucked weight, viscera weight, shell weight, and rings. The number of rings plus 1.5 gives the age in years. The aim was to build a model that accurately predicts the age of abalones using these features.</p>
+                <p>This project involved the analysis of the Abalone dataset, a collection of measurements obtained from abalones, a type of marine snail. The dataset includes various physical measurements such as weights, heights, diameters, and lengths, along with categorical attributes like sex. The main objectives were to explore the data through visualization and statistical models, predict the age of abalones, and understand the relationships between different physical attributes.</p>
                 
                 <h3>Tools and Technologies Used</h3>
                 <ul>
-                    <li><strong>Programming Languages:</strong> Python</li>
-                    <li><strong>Data Manipulation and Analysis:</strong> pandas, numpy</li>
-                    <li><strong>Data Visualization:</strong> seaborn, matplotlib</li>
-                    <li><strong>Machine Learning:</strong> sklearn</li>
+                    <li><strong>Programming Languages:</strong> R</li>
+                    <li><strong>Data Manipulation and Analysis:</strong> dplyr, tidyr</li>
+                    <li><strong>Data Visualization:</strong> ggplot2</li>
+                    <li><strong>Statistical Analysis:</strong> stats, car</li>
+                    <li><strong>Machine Learning:</strong> randomForest, rpart, caret</li>
+                    <li><strong>Dimensionality Reduction:</strong> prcomp (PCA)</li>
                 </ul>
                 
-                <h3>Analysis and Techniques</h3>
-                <p>The project included data cleaning, exploratory data analysis, feature engineering, and the implementation of machine learning models. I explored various algorithms such as Linear Regression, Decision Trees, and Random Forests to predict the age of abalones. The models were evaluated using metrics like mean absolute error and root mean square error.</p>
+                <h3>Exploratory Data Analysis (EDA) and Preprocessing</h3>
+                <p>During the EDA phase, we performed the following tasks:</p>
+                <ul>
+                    <li>Visualized distributions of numerical variables and identified potential outliers using scatter plots and correlation matrices.</li>
+                    <li>Explored relationships between variables, noting significant correlations such as between length and diameter.</li>
+                    <li>Addressed missing values and ensured consistent data types across the dataset.</li>
+                    <li>Removed outliers and normalized numerical data to improve model accuracy.</li>
+                </ul>
 
-                <h3>Outcomes and Insights</h3>
-                <p>The analysis revealed significant features that influence the age of abalones, with the Random Forest model providing the most accurate predictions. This project demonstrated the effectiveness of machine learning techniques in solving real-world problems involving complex datasets.</p>
+                <h3>Statistical Analysis and Modeling Techniques</h3>
+                <p>We applied several statistical models and techniques to analyze the dataset:</p>
+                <ul>
+                    <li><strong>Linear and Polynomial Regression:</strong> Used to predict abalone age based on physical measurements. Interaction terms and polynomial degrees were used to improve model performance.</li>
+                    <li><strong>Principal Component Analysis (PCA):</strong> Reduced dimensionality to address multicollinearity among predictor variables, resulting in improved model accuracy.</li>
+                    <li><strong>Decision Trees and Random Forests:</strong> Implemented to classify abalone sex and predict age. Evaluated variable importance and model performance using Mean Squared Error (MSE).</li>
+                    <li><strong>Chi-Square Tests:</strong> Investigated relationships between categorical variables, revealing significant associations between age and sex.</li>
+                    <li><strong>K-Prototypes Clustering:</strong> Identified distinct groups of abalones based on combined numerical and categorical data.</li>
+                </ul>
 
-                <a href="index.html" class="button">Back to Portfolio</a>
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Significant relationships were found between physical measurements and abalone age.</li>
+                    <li>PCA improved prediction accuracy by addressing multicollinearity.</li>
+                    <li>Decision trees and random forests effectively classified abalone sex based on physical characteristics.</li>
+                    <li>Statistical tests revealed significant associations between age and sex, though with varying degrees of significance depending on included variables.</li>
+                </ul>
+
+                <h3>Conclusion</h3>
+                <p>The analysis of the Abalone dataset provided valuable insights into the relationships between physical attributes and age, sex, and groupings of abalones. The findings can aid researchers and professionals in marine biology and related fields by enhancing their understanding of abalone characteristics and improving resource management.</p>
+                
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://archive.ics.uci.edu/ml/datasets/abalone">Abalone dataset - UCI Machine Learning Repository</a></li>
+                </ul>
             </div>
         </section>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 </html>
