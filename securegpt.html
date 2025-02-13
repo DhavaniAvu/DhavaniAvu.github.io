@@ -17,7 +17,7 @@
                 <h2>SecureGPT Project Overview</h2>
                 
                 <h3>Objective</h3>
-                <p>SecureGPT aims to efficiently process structured datasets and video files, providing insightful summaries and visualizations to enhance user interaction through a seamless dashboard experience.</p>
+                <p>SecureGPT aims to efficiently process structured datasets, providing insightful summaries and visualizations to enhance user interaction through a seamless dashboard experience.</p>
 
                 <h3>Problem Definition</h3>
                 <p>Organizations face significant challenges in extracting meaningful insights from vast and complex datasets. The sheer volume and complexity of data can overwhelm decision-makers, leading to reliance on manual analysis methods that are time-consuming and prone to errors...</p>
@@ -36,18 +36,12 @@
 
                 <h3>SecureGPT Algorithm Overview</h3>
                 <ol>
-                    <li><strong>Start and Input Type Check</strong>: Determine if the input is a structured dataset or a video file.</li>
-                    <li><strong>For Structured Datasets</strong>:
+                    <li><strong>Start and Input Type Check</strong>: Determine if the input is a structured dataset. If not pre-processing is done.</li>
+                    <li><strong>Structured Datasets</strong>:
                         <ul>
-                            <li>Upload Structured Dataset</li>
+                            <li>Upload Structured Dataset using Flask</li>
                             <li>Prepare API Request</li>
                             <li>API Response Handling</li>
-                        </ul>
-                    </li>
-                    <li><strong>For Video Files</strong>: 
-                        <ul>
-                            <li>Upload Video File</li>
-                            <li>Summarize Video Content</li>
                         </ul>
                     </li>
                     <li><strong>Processing Visualization Code</strong>: Request specific visualization code and integrate it into the dashboard.</li>
